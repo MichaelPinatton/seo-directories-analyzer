@@ -83,7 +83,7 @@ with st.expander("🛠️ -- How to use the app?", expanded=False):
     st.markdown("")
     st.markdown(
         """
-1. Export the "Landing page" report from Search Console in CSV format:
+1. Export the "Landing page" report from Search Console in **CSV format**:
   * From the web Search Console (limited to 1000 URL)
   * From custom Data Studio [like this one](https://datastudio.google.com/reporting/c016a6cd-2c8d-4c7c-9b29-609c94d3015d) (right-click > export CSV)
 2. Upload your CSV file on the app
@@ -97,7 +97,7 @@ with st.expander("ℹ️  -- More info", expanded=False):
         """
 1. The script doesn't work well with subdomains (better to use URL SC property or domain without subdomain data)
 2. In the future, I'd like to add the Search Console API access for a faster experience
-3. Thank you [@Elias Dabbas](https://twitter.com/eliasdabbas) for your 'url to df' function i reused here
+3. Thank you [@Elias Dabbas](https://twitter.com/eliasdabbas) for your 'url to df' function I reused here
 4. App is in beta, feedbacks are welcome!
 	    """)
 with st.expander("🐶  -- Examples", expanded=False):
