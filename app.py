@@ -89,11 +89,7 @@ with st.expander("🛠️ -- How to use the app?", expanded=False):
 2. Upload your CSV file on the app
 3. Visualize (+download) the 3 pie charts and download the final Excel file
 	    """)
-    st.markdown("---")
-    st.markdown(
-        """
-        📺 Quick demo here [@MichaelPinatton](https://twitter.com/michaelpinatton) if needed
-        """)
+    st.markdown("")
 
 with st.expander("ℹ️  -- More info", expanded=False):
     st.markdown("")
