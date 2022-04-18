@@ -100,6 +100,14 @@ with st.expander("ℹ️  -- More info", expanded=False):
 3. Thank you [@Elias Dabbas](https://twitter.com/eliasdabbas) for a function I use from advertools
 4. App is in beta, feedbacks are welcome!
 	    """)
+with st.expander("🐶  -- Examples", expanded=False):
+    c30, c31 = st.columns(2)
+    with c30:
+        st.image("https://github.com/MichaelPinatton/seo-directories-analyzer/blob/main/ex/ex-pie-chart.png", width=200)
+    with c31:
+        st.image("https://github.com/MichaelPinatton/seo-directories-analyzer/blob/main/ex/ex-excel.png", width=200)
+
+    st.markdown("")
 
 st.subheader('1) Upload data')
 
