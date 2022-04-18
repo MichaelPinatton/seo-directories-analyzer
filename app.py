@@ -102,8 +102,8 @@ with st.expander("ℹ️  -- More info", expanded=False):
 	    """)
 with st.expander("🐶  -- Examples", expanded=False):
 
-    st.image("ex-pie-chart.png", width=800)
-    st.image("ex-excel.png", width=800)
+    st.image("ex-pie-chart.png", width=800, caption='Pie chart example')
+    st.image("ex-excel.png", width=800, caption='Excel worksheet example')
 
     st.markdown("")
 
@@ -198,7 +198,7 @@ if input_file is not None:
     pivot_dir_1_plot = pivot_dir_1[['Dir_1','%_Clicks']]
     pivot_dir_1_plot = pivot_dir_1_plot.drop(pivot_dir_1_plot[pivot_dir_1_plot['%_Clicks'] == 0].index)
     pivot_dir_1_plot.loc[pivot_dir_1_plot['%_Clicks'] < 0.005, 'Dir_1'] = '*others'
-    plot_dir_1 = px.pie(pivot_dir_1_plot, values='%_Clicks', names='Dir_1', title='Clicks distribution for Directories level 1', width=1200, height=600)
+    plot_dir_1 = px.pie(pivot_dir_1_plot, values='%_Clicks', names='Dir_1', title='Click distribution for Directories level 1', width=1200, height=600)
     st.plotly_chart(plot_dir_1, use_container_width=True)
 
     #Plot for directories level 2
@@ -207,7 +207,7 @@ if input_file is not None:
     pivot_dir_2_plot['Dir_2'] = pivot_dir_2_plot['Dir_1'] + '/' + pivot_dir_2_plot['Dir_2']
     pivot_dir_2_plot.loc[pivot_dir_2_plot['%_Clicks'] < 0.005, 'Dir_2'] = '*others'
     pivot_dir_2_plot = pivot_dir_2_plot[['Dir_2','%_Clicks']]
-    plot_dir_2 = px.pie(pivot_dir_2_plot, values='%_Clicks', names='Dir_2', title='Clicks distribution for Directories level 2', width=1300, height=600)
+    plot_dir_2 = px.pie(pivot_dir_2_plot, values='%_Clicks', names='Dir_2', title='Click distribution for Directories level 2', width=1300, height=600)
     st.plotly_chart(plot_dir_2, use_container_width=True)
 
     #Plot for directories level 3
@@ -216,7 +216,7 @@ if input_file is not None:
     pivot_dir_3_plot['Dir_3'] = pivot_dir_3_plot['Dir_1'] + '/' + pivot_dir_3_plot['Dir_2'] + '/' + pivot_dir_3_plot['Dir_3']
     pivot_dir_3_plot.loc[pivot_dir_3_plot['%_Clicks'] < 0.005, 'Dir_3'] = '*others'
     pivot_dir_3_plot = pivot_dir_3_plot[['Dir_3','%_Clicks']]
-    plot_dir_3 = px.pie(pivot_dir_3_plot, values='%_Clicks', names='Dir_3', title='Clicks distribution for Directories level 3', width=1400, height=600)
+    plot_dir_3 = px.pie(pivot_dir_3_plot, values='%_Clicks', names='Dir_3', title='Click distribution for Directories level 3', width=1400, height=600)
     st.plotly_chart(plot_dir_3, use_container_width=True)
 
     #EXPORT EXCEL FILE
