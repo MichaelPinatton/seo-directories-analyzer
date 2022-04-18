@@ -102,8 +102,8 @@ with st.expander("ℹ️  -- More info", expanded=False):
 	    """)
 with st.expander("🐶  -- Examples", expanded=False):
 
-    st.image("ex-pie-chart.png", width=400)
-    st.image("ex-excel.png", width=400)
+    st.image("ex-pie-chart.png", width=800)
+    st.image("ex-excel.png", width=800)
 
     st.markdown("")
 
