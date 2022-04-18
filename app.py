@@ -102,8 +102,8 @@ with st.expander("ℹ️  -- More info", expanded=False):
 	    """)
 with st.expander("🐶  -- Examples", expanded=False):
 
-    st.image("/ex/ex-pie-chart.png")
-    st.image("/ex/ex-excel.png")
+    st.image("https://github.com/MichaelPinatton/seo-directories-analyzer/blob/main/ex/ex-pie-chart.png")
+    st.image("https://github.com/MichaelPinatton/seo-directories-analyzer/blob/main/ex/ex-excel.png")
 
     st.markdown("")
 
