@@ -71,7 +71,7 @@ st.set_page_config(page_title="SEO - Directories Analyzer", layout="wide")
 
 #header
 st.title("SEO - Directories Analyzer")
-st.subheader("Quick analysis of your directories traffic and performances")
+st.subheader("Quick analysis of your directories traffic and performances (Search Console)")
 st.write("With this app you'll get data and pie charts for each directory level (1,2 & 3) + insights from directories POV (distribution, CTR, nb of URL, clicks per page)")
 st.write("⭐ **Detect in a few minutes your worst and best performing directories** ⭐")
 
