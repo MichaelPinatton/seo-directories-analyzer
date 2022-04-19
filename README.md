@@ -1,6 +1,6 @@
 # SEO - Directories Analyzer
 
-Quick analysis of your directories traffic and performances
+**Quick analysis of your directories traffic and performances (Search Console)**
 
 With this app you'll get data and pie charts for each directory level (1,2 & 3) + insights from directories POV (distribution, CTR, nb of URL, clicks per page)
 
